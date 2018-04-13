@@ -17,13 +17,13 @@ module Email
     res
   end
 
-  def Email.send_email(data)
+  def Email.send_email(data, domain)
     Mail.defaults { delivery_method :smtp, OPTIONS}
 
     Mail.deliver do 
       from ENV['GMAIL_USERNAME']
       to ENV['GMAIL_USERNAME']
-      subject 'Here is the reddit feed you requested'
+      subject "Your daily #{domain} feed"
       body Email.text_email(data)
     end
   end

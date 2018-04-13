@@ -31,7 +31,7 @@ begin
     search_url = "https://www.reddit.com/search?q=#{subreddit}#{keyword}&t=day"
     data = get_data(search_url)
     puts "Sending the email..."
-    Email.send_email(data)
+    Email.send_email(data, "Reddit")
     a_day = 24*60*60
     sleep a_day
   end
