@@ -6,7 +6,8 @@ A bot which periodically checks forums, social media sites, news sites to monito
 * Add the following environment variables before running the scripts.
   * GMAIL_USERNAME = "your gmail address"
   * GMAIL_PASSWORD = "your gmail password"
-* Change the keyword variable in reddit.rb or hacker_news.rb
+* Install google chrome to use quora.rb
+* Change the keyword variable in reddit.rb or hacker_news.rb or quora.rb
 * Specify a subreddit to search in reddit.rb(**optional**)
-* run the ruby script: *ruby reddit.rb* or *ruby hacker_news.rb*
+* run the ruby script: *ruby reddit.rb* or *ruby hacker_news.rb* or *ruby quora.rb*
 
