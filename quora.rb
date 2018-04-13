@@ -17,7 +17,7 @@ end
 
 begin 
   while true do
-    keyword = "ruby" 
+    keyword = "ruby on rails" 
     search_url = "https://www.quora.com/search?q=#{keyword}&time=day&type=answer"
     data = get_data(search_url)
     puts "Sending the email..."
